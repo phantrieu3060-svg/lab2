@@ -44,7 +44,7 @@ namespace Lab2
                         long giaban = ReadPositiveLong();
                         Console.Write("Nhập diện tích tối thiểu: ");
                         double dientich = ReadPositiveDouble();
-                        quanly.TimKiemTheoDiaDiem(diadiem, giaban, dientich);
+                        quanly.TimKiem(diadiem, giaban, dientich);
                         break;
                     case 3:
                         Console.WriteLine($"Tổng tiền khu đất: {quanly.TongTienKhuDat():N0}");
@@ -221,7 +221,7 @@ namespace Lab2
                     Console.WriteLine();
                 }
             }
-            public void TimKiemTheoDiaDiem(string diadiem, long giaban, double dientich)
+            public void TimKiem(string diadiem, long giaban, double dientich)
             {
 
                 bool found = false;
